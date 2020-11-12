@@ -1,0 +1,24 @@
+-Przed pierwszym uruchomieniem należy utworzyć nowy projekt ros, 
+
+-utworzyć odpowiednie foldery i skopiować odpowiednio potrzebne pliki lub usunąć folder .../gazebo_ros/build i utworzyć nowy.
+
+-Wejść do niego w konsoli i wpisać cmkae.., 
+
+-następnie make
+
+-Należy także pozmieniać ścieżki do pliku w pliku src/robot_gazebo/src/read.cpp
+
+1. cd ~/.../gazebo_ros
+2. source devel/setup.bash
+3. roscore w nowej karcie i roslaunch robot_gazebo robot.launch
+4. w nowej karcie:
+- source devel/setup.bash
+- uruchomienie skryptu czytającego pomiary z czujnika:
+rosrun robot_gazebo Point_cloud
+5. W nowej karcie
+- source devel/setup.bash
+- rosrun robot_gazebo read do wyświetlenia pomiarów z czujnika
+
+W src/robot_description/urdf jest model robota
+
+W src/robot_gazebo/src są skrypty do przewarzania danych z czujnika

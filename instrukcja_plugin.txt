@@ -1,0 +1,9 @@
+Przed pierwszym uruchomieniem należy usunąć folder build i utworzyć nowy i wpisać cmake..
+
+cd ~/.../position_plugin/build
+cmake ../
+make
+
+komenda niżej z odpowiednią ścieżką (nazleży ją wpisać za każdym razem, gdy włączy się nowy terminal)
+export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/Magisterka/position_plugin/build
+
